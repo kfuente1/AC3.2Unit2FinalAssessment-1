@@ -14,7 +14,7 @@ class ItemViewController: UIViewController, UITextFieldDelegate {
 	@IBOutlet weak var stepper: UIStepper!
 	@IBOutlet weak var label: UILabel!
 	@IBOutlet weak var textField: UITextField!
-	var globalValue = 5
+	var globalValue = 0
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
