@@ -4,25 +4,23 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "3CCF31241C04A46A70B2ED63F3F9B754376D6710" : 9223372036854775807,
     "A7908A8CD66FE8C27834E427755C0DC913B30025" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A0C1C419-7A61-457D-87E8-55A95CF687DA",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "3CCF31241C04A46A70B2ED63F3F9B754376D6710" : "",
-    "A7908A8CD66FE8C27834E427755C0DC913B30025" : "AC3.2Unit2FinalAssessment\/"
+    "A7908A8CD66FE8C27834E427755C0DC913B30025" : ""
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "AC3.2Unit2FinalAssessment",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AC3.2Unit2FinalAssessment\/AC3.2Unit2FinalAssessment.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AC3.2Unit2FinalAssessment.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SimoneGrant\/AC3.2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/C4Q\/AC3.2Unit2FinalAssessment.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3CCF31241C04A46A70B2ED63F3F9B754376D6710"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A7908A8CD66FE8C27834E427755C0DC913B30025"
     },
     {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/C4Q\/AC3.2Unit2FinalAssessment.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SimoneGrant\/AC3.2Unit2FinalAssessment",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A7908A8CD66FE8C27834E427755C0DC913B30025"
     }
