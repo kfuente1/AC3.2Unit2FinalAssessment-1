@@ -46,28 +46,14 @@ class ColorTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        
-        //guard let crayon =
-        
-        
-        /*
- guard let genre = Genre.init(rawValue: indexPath.section),
- let data = byGenre(genre) else {
- return cell
- }*/
+        let currentCrayon = UIColor(red: CGFloat(crayons[indexPath.row].red), green: CGFloat(crayons[indexPath.row].green), blue: CGFloat(crayons[indexPath.row].blue), alpha: 1.0)
         
         // Configure the cell...
-        cell.backgroundColor = UIColor(red: CGFloat(crayons[0].red), green: CGFloat(crayons[0].green), blue: CGFloat(crayons[0].blue), alpha: 1.0)
+        cell.backgroundColor = currentCrayon
         
         //cell.backgroundColor = UIColor.blue
         return cell
     }
-    
-    /*
-    ovveride func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
-    }
-    */
 
     
     // MARK: - Navigation
@@ -75,7 +61,8 @@ class ColorTableViewController: UITableViewController {
   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
              if let gvc = segue.destination as? CrayonViewController {
-                gvc.crayonBackgroundColor = UIColor(red: CGFloat(crayons[0].red), green: CGFloat(crayons[0].green), blue: CGFloat(crayons[0].blue), alpha: 1.0)
+              gvc.crayonBackgroundColor = UIColor(red: CGFloat(crayons[0].red), green: CGFloat(crayons[0].green), blue: CGFloat(crayons[0].blue), alpha: 1.0)
+            
         }
     
 
