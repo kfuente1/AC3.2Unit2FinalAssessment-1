@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		E329E88E1DA69A9500E99293 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329E88D1DA69A9500E99293 /* AppDelegate.swift */; };
-		E329E8901DA69A9500E99293 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329E88F1DA69A9500E99293 /* ViewController.swift */; };
-		E329E8931DA69A9500E99293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E329E8911DA69A9500E99293 /* Main.storyboard */; };
 		E329E8951DA69A9500E99293 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E329E8941DA69A9500E99293 /* Assets.xcassets */; };
 		E329E8981DA69A9500E99293 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E329E8961DA69A9500E99293 /* LaunchScreen.storyboard */; };
 		E329E8A31DA69A9500E99293 /* AC3_2Unit2FinalAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329E8A21DA69A9500E99293 /* AC3_2Unit2FinalAssessmentTests.swift */; };
 		E329E8AE1DA69A9500E99293 /* AC3_2Unit2FinalAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329E8AD1DA69A9500E99293 /* AC3_2Unit2FinalAssessmentUITests.swift */; };
+		E329E8BC1DA69D1100E99293 /* CrayonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329E8BB1DA69D1100E99293 /* CrayonData.swift */; };
+		E329E8BE1DA69D2800E99293 /* Crayon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329E8BD1DA69D2800E99293 /* Crayon.swift */; };
+		E329E8C01DA69D7300E99293 /* CrayonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329E8BF1DA69D7300E99293 /* CrayonViewController.swift */; };
+		E329E8C21DA69D9600E99293 /* ColorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329E8C11DA69D9600E99293 /* ColorTableViewController.swift */; };
+		E329E8C41DA6A51200E99293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E329E8C31DA6A51200E99293 /* Main.storyboard */; };
+		E329E8C81DA6A67B00E99293 /* SlideStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E329E8C71DA6A67B00E99293 /* SlideStepViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +40,6 @@
 /* Begin PBXFileReference section */
 		E329E88A1DA69A9500E99293 /* AC3.2Unit2FinalAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AC3.2Unit2FinalAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E329E88D1DA69A9500E99293 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E329E88F1DA69A9500E99293 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E329E8921DA69A9500E99293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E329E8941DA69A9500E99293 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E329E8971DA69A9500E99293 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E329E8991DA69A9500E99293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +49,12 @@
 		E329E8A91DA69A9500E99293 /* AC3.2Unit2FinalAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AC3.2Unit2FinalAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E329E8AD1DA69A9500E99293 /* AC3_2Unit2FinalAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AC3_2Unit2FinalAssessmentUITests.swift; sourceTree = "<group>"; };
 		E329E8AF1DA69A9500E99293 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E329E8BB1DA69D1100E99293 /* CrayonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrayonData.swift; sourceTree = "<group>"; };
+		E329E8BD1DA69D2800E99293 /* Crayon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crayon.swift; sourceTree = "<group>"; };
+		E329E8BF1DA69D7300E99293 /* CrayonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CrayonViewController.swift; path = ../CrayonViewController.swift; sourceTree = "<group>"; };
+		E329E8C11DA69D9600E99293 /* ColorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTableViewController.swift; sourceTree = "<group>"; };
+		E329E8C31DA6A51200E99293 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E329E8C71DA6A67B00E99293 /* SlideStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideStepViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +105,14 @@
 		E329E88C1DA69A9500E99293 /* AC3.2Unit2FinalAssessment */ = {
 			isa = PBXGroup;
 			children = (
-				E329E88D1DA69A9500E99293 /* AppDelegate.swift */,
-				E329E88F1DA69A9500E99293 /* ViewController.swift */,
-				E329E8911DA69A9500E99293 /* Main.storyboard */,
-				E329E8941DA69A9500E99293 /* Assets.xcassets */,
-				E329E8961DA69A9500E99293 /* LaunchScreen.storyboard */,
+				E329E8BB1DA69D1100E99293 /* CrayonData.swift */,
+				E329E8BD1DA69D2800E99293 /* Crayon.swift */,
+				E329E8C31DA6A51200E99293 /* Main.storyboard */,
+				E329E8C61DA6A63C00E99293 /* Views */,
+				E329E8BF1DA69D7300E99293 /* CrayonViewController.swift */,
+				E329E8C11DA69D9600E99293 /* ColorTableViewController.swift */,
+				E329E8C71DA6A67B00E99293 /* SlideStepViewController.swift */,
+				E329E8C51DA6A62000E99293 /* helper */,
 				E329E8991DA69A9500E99293 /* Info.plist */,
 			);
 			path = AC3.2Unit2FinalAssessment;
@@ -123,6 +134,23 @@
 				E329E8AF1DA69A9500E99293 /* Info.plist */,
 			);
 			path = AC3.2Unit2FinalAssessmentUITests;
+			sourceTree = "<group>";
+		};
+		E329E8C51DA6A62000E99293 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				E329E88D1DA69A9500E99293 /* AppDelegate.swift */,
+				E329E8941DA69A9500E99293 /* Assets.xcassets */,
+				E329E8961DA69A9500E99293 /* LaunchScreen.storyboard */,
+			);
+			name = helper;
+			sourceTree = "<group>";
+		};
+		E329E8C61DA6A63C00E99293 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +260,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E329E8C41DA6A51200E99293 /* Main.storyboard in Resources */,
 				E329E8981DA69A9500E99293 /* LaunchScreen.storyboard in Resources */,
 				E329E8951DA69A9500E99293 /* Assets.xcassets in Resources */,
-				E329E8931DA69A9500E99293 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E329E8901DA69A9500E99293 /* ViewController.swift in Sources */,
+				E329E8C01DA69D7300E99293 /* CrayonViewController.swift in Sources */,
 				E329E88E1DA69A9500E99293 /* AppDelegate.swift in Sources */,
+				E329E8C81DA6A67B00E99293 /* SlideStepViewController.swift in Sources */,
+				E329E8BC1DA69D1100E99293 /* CrayonData.swift in Sources */,
+				E329E8C21DA69D9600E99293 /* ColorTableViewController.swift in Sources */,
+				E329E8BE1DA69D2800E99293 /* Crayon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +328,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E329E8911DA69A9500E99293 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E329E8921DA69A9500E99293 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E329E8961DA69A9500E99293 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -505,6 +529,7 @@
 				E329E8B41DA69A9500E99293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E329E8B51DA69A9500E99293 /* Build configuration list for PBXNativeTarget "AC3.2Unit2FinalAssessmentTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +538,7 @@
 				E329E8B71DA69A9500E99293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E329E8B81DA69A9500E99293 /* Build configuration list for PBXNativeTarget "AC3.2Unit2FinalAssessmentUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +547,7 @@
 				E329E8BA1DA69A9500E99293 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
