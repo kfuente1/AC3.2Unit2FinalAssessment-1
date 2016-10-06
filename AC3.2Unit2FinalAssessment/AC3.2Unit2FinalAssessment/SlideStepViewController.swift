@@ -32,6 +32,7 @@ class SlideStepViewController: UIViewController {
     
     @IBAction func stepperTapped(_ sender: UIStepper) {
         //BAHH Delegates??
+        //silly stepper fail
         let oldValue = sender.value
         if oldValue < sender.value {
             slider.value = (Float(slider.value)) - (Float(sender.value))
