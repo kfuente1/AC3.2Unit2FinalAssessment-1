@@ -9,7 +9,7 @@
 5. Upon completion, commit locally.
 
 	```
-	git commit -a -m "First, and in this case, final commit"
+	git commit -a -m "I'm done"
 	```
 7. Push to your repo.
 
