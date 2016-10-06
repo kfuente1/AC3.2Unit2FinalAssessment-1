@@ -56,4 +56,23 @@ class Crayon {
             return nil
         }
     }
+    
+    convenience init?(fromRuthBaderGinsburg:[String:Any]) {
+        if let name = fromRuthBaderGinsburg["name"] as? String,
+            let rbg = fromRuthBaderGinsburg["rgb"] as? String {
+            
+            var numbers = [Double]()
+            
+            let numbersAsStrings = rbg.components(separatedBy: CharacterSet.whitespacesAndNewlines.union(.punctuationCharacters))
+            
+            for number in numbersAsStrings {
+                if let n = Double(number) {
+                    numbers.append(n)
+                }
+            }
+            self.init(name: name, red: numbers[0]/255.0, green: numbers[1]/255.0, blue: numbers[2]/255.0)
+            
+            
+        } else {return nil}
+    }
 }

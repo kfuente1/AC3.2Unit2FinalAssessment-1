@@ -36,7 +36,7 @@ let crayolaColors = [
     ],
     [
         "hex": "#FFA474",
-        "name": "Atomic Tangerine",
+        "name": "Trump© Spray",
         "rgb": "(255, 164, 116)"
     ],
     [

@@ -17,7 +17,7 @@ class Unit2FinalTableViewController: UITableViewController {
         super.viewDidLoad()
         self.title = "CRAYONS YO!"
         for c in crayolaColors {
-            if let crayon = Crayon(fromDict: c) {
+            if let crayon = Crayon(fromRuthBaderGinsburg: c) {
                 crayons.append(crayon)
             }
         }
