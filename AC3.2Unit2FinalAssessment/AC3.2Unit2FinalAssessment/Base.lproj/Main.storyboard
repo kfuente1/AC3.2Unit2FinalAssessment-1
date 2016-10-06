@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QXa-Ic-ABR">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Slider-->
+        <scene sceneID="dGS-Nt-2ag">
+            <objects>
+                <viewController id="fKV-Ao-sEw" customClass="SliderSwitcherViewController" customModule="AC3_2Unit2FinalAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Bv-lB-ZsP"/>
+                        <viewControllerLayoutGuide type="bottom" id="xCv-Wl-7vH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g95-5t-ycy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="EAL-nU-sv1">
+                                <frame key="frameInset" minX="140" minY="202" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stepperChanges:" destination="fKV-Ao-sEw" eventType="valueChanged" id="hm0-28-spL"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RH-DF-vCJ">
+                                <frame key="frameInset" minX="166" minY="276" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eF0-yG-cqd">
+                                <frame key="frameInset" minX="139" minY="318" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" continuous="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GK-rf-1XL">
+                                <frame key="frameInset" minX="128" minY="123" width="118" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderChanges:" destination="fKV-Ao-sEw" eventType="valueChanged" id="2Bm-pS-bBH"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Slider" id="DVD-Lr-khE"/>
+                    <connections>
+                        <outlet property="horizontalSlider" destination="7GK-rf-1XL" id="efa-NN-jS4"/>
+                        <outlet property="input" destination="eF0-yG-cqd" id="AgZ-Vq-a47"/>
+                        <outlet property="label" destination="2RH-DF-vCJ" id="INL-jA-bnq"/>
+                        <outlet property="stepper" destination="EAL-nU-sv1" id="iRl-ZI-83J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dHz-qi-VUH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-983.20000000000005" y="365.66716641679164"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nxL-C9-TAg">
+            <objects>
+                <tabBarController id="QXa-Ic-ABR" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="P6n-0g-R2K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="KCa-CU-Ls0" kind="relationship" relationship="viewControllers" id="uk1-hQ-VpW"/>
+                        <segue destination="fKV-Ao-sEw" kind="relationship" relationship="viewControllers" id="vlF-Oo-5kc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elH-BL-gVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1599" y="-403"/>
+        </scene>
+        <!--Color Table View Controller-->
+        <scene sceneID="Xqn-OF-6t7">
+            <objects>
+                <tableViewController id="EFm-qf-MED" customClass="ColorTableViewController" customModule="AC3_2Unit2FinalAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Lf2-NI-VZP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="crayonCell" id="jMh-Re-ACJ">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jMh-Re-ACJ" id="OWb-cB-Tae">
+                                    <frame key="frameInset" width="342" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EFm-qf-MED" id="xmf-lr-p4M"/>
+                            <outlet property="delegate" destination="EFm-qf-MED" id="uVe-TE-FIC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="lCJ-sZ-CqU"/>
+                    <connections>
+                        <segue destination="uUH-Z7-Vn3" kind="show" identifier="showColorSegue" id="U0S-gL-BTF"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IFj-DN-LfN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130" y="-403"/>
+        </scene>
+        <!--Crayon View Controller-->
+        <scene sceneID="839-MJ-LIV">
+            <objects>
+                <viewController id="uUH-Z7-Vn3" customClass="CrayonViewController" customModule="AC3_2Unit2FinalAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MVo-58-IGv"/>
+                        <viewControllerLayoutGuide type="bottom" id="SGd-9O-Hjg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b68-FY-jmx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKV-Kk-v4U">
+                                <frame key="frameInset" minX="137" minY="309" width="100" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RP2-BZ-Qxd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uBI-Qd-nAS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="610" y="-403"/>
+        </scene>
+        <!--Colors-->
+        <scene sceneID="bTS-0Z-kLi">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PXu-QS-JY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="KCa-CU-Ls0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Colors" id="mbM-PC-cNV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SFZ-mV-Sbw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EFm-qf-MED" kind="relationship" relationship="rootViewController" id="tCc-dN-b89"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-868" y="-402"/>
+        </scene>
+    </scenes>
+</document>
