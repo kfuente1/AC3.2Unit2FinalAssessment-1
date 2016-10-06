@@ -14,6 +14,7 @@ class CrayonViewController: UIViewController {
     var red: Double = 0
     var green: Double = 0
     var blue: Double = 0
+    var color: UIColor = .white
 
     @IBOutlet weak var colorLabel: UILabel!
     

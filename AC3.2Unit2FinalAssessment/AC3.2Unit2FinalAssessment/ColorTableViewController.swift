@@ -49,6 +49,18 @@ class ColorTableViewController: UITableViewController {
         // Configure the cell...
         cell.textLabel?.text = crayons[indexPath.row].name
         cell.backgroundColor = UIColor(colorLiteralRed: Float(crayons[indexPath.row].red), green: Float(crayons[indexPath.row].green), blue: Float(crayons[indexPath.row].blue), alpha: 1)
+        
+        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            // Get the new view controller using segue.destinationViewController.
+            // Pass the selected object to the new view controller.
+            if let cvc = sender as? CrayonViewController {
+                cvc.name = crayons[indexPath.row].name
+                cvc.blue = crayons[indexPath.row].blue
+                cvc.red = crayons[indexPath.row].red
+                cvc.green = crayons[indexPath.row].green
+            }
+        }
+        
         return cell
     }
 
@@ -90,6 +102,10 @@ class ColorTableViewController: UITableViewController {
     
     
 
+    // MARK: - Navigation
 
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+
+    
 
 }
