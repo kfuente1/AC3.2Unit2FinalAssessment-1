@@ -45,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47153C651DA6B69800A26CE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47F7063C1DA69DF500702B8D /* TableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		479D6BC31DA69A4F00DAE695 = {
 			isa = PBXGroup;
 			children = (
@@ -66,10 +74,10 @@
 			children = (
 				479D6BCF1DA69A4F00DAE695 /* AppDelegate.swift */,
 				47F706421DA69EC300702B8D /* Model */,
+				47153C651DA6B69800A26CE0 /* View */,
 				479D6BD11DA69A4F00DAE695 /* FirstViewController.swift */,
 				479D6BD31DA69A4F00DAE695 /* SecondViewController.swift */,
 				47F7063A1DA69DD500702B8D /* TableViewController.swift */,
-				47F7063C1DA69DF500702B8D /* TableViewCell.swift */,
 				479D6BD51DA69A4F00DAE695 /* Main.storyboard */,
 				479D6BD81DA69A4F00DAE695 /* Assets.xcassets */,
 				479D6BDA1DA69A4F00DAE695 /* LaunchScreen.storyboard */,

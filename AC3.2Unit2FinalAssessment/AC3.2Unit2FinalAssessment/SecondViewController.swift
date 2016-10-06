@@ -19,7 +19,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    // Delegate
     self.ourTextField.delegate = self
   }
   
@@ -27,25 +27,26 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     ourSlider.value = Float(ourValue)
     ourStepper.value = Double(ourValue)
     ourLabel.text = String(ourValue)
+    ourTextField.text = String(Int(ourValue))
   }
-  
+  // Action
   @IBAction func sliderSlid(_ sender: UISlider) {
     ourValue = Int(sender.value)
     syncValues()
   }
-
+  // Action
   @IBAction func stepperStepped(_ sender: UIStepper) {
     ourValue = Int(sender.value)
     syncValues()
   }
-  
+  // Delegate
   func textFieldDidEndEditing(_ textField: UITextField) {
     if let newValue = Int(textField.text!) {
       ourValue = newValue
       syncValues()
     }
   }
-  
+  // Delegate
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     _ = self.textFieldsAreValid()
     self.view.endEditing(true)
